@@ -32,7 +32,7 @@ public class Svg2XmlController {
 
             // Supprimer le fichier temporaire
             tempFile.delete();
-
+    
             return ResponseEntity.ok(xmlString);
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)

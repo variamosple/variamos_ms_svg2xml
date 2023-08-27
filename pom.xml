@@ -15,7 +15,7 @@
 	<name>Svg2xmlMS</name>
 	<description>Svg to xml conversion for mxgraph</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
