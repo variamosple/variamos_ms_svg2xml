@@ -50,7 +50,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'variamos_ms_svg2xml'
+        app-name: 'variamos-ms-svg2xml'
         slot-name: 'production'
         publish-profile: ${{secrets.PRODUCTIONSLOTPUBLISHPROFILEDEV}}
-        images: '${{vars.ACRDEV}}/${{secrets.ACRUSERNAMEDEV}}/variamos_ms_svg2xml:latest'
+        images: '${{vars.ACRDEV}}/${{secrets.ACRUSERNAMEDEV}}/variamos-ms-svg2xml:latest'
