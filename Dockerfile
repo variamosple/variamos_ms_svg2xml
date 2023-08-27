@@ -1,17 +1,14 @@
-FROM maven:3.9.3-eclipse-temurin-20-alpine AS build
-
-WORKDIR /build
-
-COPY . .
-
-# build and skip tests
-RUN mvn clean install -DskipTests
-
 FROM openjdk:20-slim
+
+RUN apt-get update && apt-get install -y maven
+
+COPY . /app
 
 WORKDIR /app
 
-COPY --from=build /build/target/variamos_ms_svg2xml.jar variamos_ms_svg2xml.jar
+RUN mvn -version
+RUN mvn -f /app/pom.xml clean
+RUN mvn -f /app/pom.xml package
 
 EXPOSE 8080
 
