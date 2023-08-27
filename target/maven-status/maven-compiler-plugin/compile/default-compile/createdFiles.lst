@@ -1,0 +1,14 @@
+com\example\Svg2xmlMS\svg2xml\Svg2XmlGui.class
+com\example\Svg2xmlMS\Controller\Svg2XmlController.class
+com\example\Svg2xmlMS\svg2xml\XmlStyle.class
+com\example\Svg2xmlMS\svg2xml\Connection.class
+com\example\Svg2xmlMS\Svg2xmlMsApplication.class
+com\example\Svg2xmlMS\svg2xml\XmlConfig.class
+com\example\Svg2xmlMS\utils\FileUtils.class
+com\example\Svg2xmlMS\svg2xml\mxPathParser.class
+com\example\Svg2xmlMS\svg2xml\XmlConfig$aspectType.class
+com\example\Svg2xmlMS\svg2xml\mxPolyParser.class
+com\example\Svg2xmlMS\svg2xml\Svg2Xml.class
+com\example\Svg2xmlMS\svg2xml\Svg2XmlGui$1.class
+com\example\Svg2xmlMS\svg2xml\Constraint.class
+com\example\Svg2xmlMS\svg2xml\Shape2Xml.class
