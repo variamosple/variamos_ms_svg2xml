@@ -12,4 +12,4 @@ RUN mvn -f /app/pom.xml package
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "variamos_ms_svg2xml.jar"]
+CMD ["java", "-jar", "/app/target/variamos_ms_svg2xml.jar"]
