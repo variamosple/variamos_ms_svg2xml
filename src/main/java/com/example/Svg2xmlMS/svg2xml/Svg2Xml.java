@@ -644,7 +644,7 @@ public class Svg2Xml
 					}
 
 					lastGroupName = groupName;
-					groupXml = "<shapes name=\"" + groupName + "\">" + System.getProperty("line.separator");
+					groupXml = System.getProperty("line.separator");
 					String tmp = Svg2Xml.printDocumentString(destDoc, groupBaos);
 					tmp = tmp.replaceAll("\\.0\"", "\"");
 					groupXml += tmp;
@@ -658,8 +658,6 @@ public class Svg2Xml
 				// save the xml
 				if(isLastInGroup)
 				{
-					groupXml += "</shapes>";
-
 					groupXml = groupXml.replaceAll("\\.+0\"", "\"");
 
 					try
